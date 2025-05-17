@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Günlük Yapılacaklar Listesi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Günlük Yapılacaklar Listesi</h1>
+
+    <div class="input-group">
+      <input id="taskInput" type="text" placeholder="Yeni görev..." />
+      <button id="addTaskBtn">Ekle</button>
+    </div>
+
+    <div class="timer-group">
+      <label for="timerSelect">Gün sonuna kalan süre:</label>
+      <!-- <select id="timerSelect">
+        <option value="1m" selected>1 Dakika</option>
+        <option value="5m">5 Dakika</option>
+        <option value="1h">1 Saat</option>
+        <option value="1d">1 Gün</option>
+      </select> -->
+      <div id="timerDisplay" class="timer-display">--:--:--</div>
+    </div>
+
+    <h2>Yapılacaklar</h2>
+    <div id="taskList" class="task-list"></div>
+
+    <h2>Önceki Günlerde Tamamlananlar</h2>
+    <div id="completedLog" class="completed-log"></div>
+
+    <button id="resetBtn" class="reset-btn">Verileri Sıfırla</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
